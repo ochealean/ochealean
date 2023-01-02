@@ -1,1 +1,0 @@
-alert("success ulet hayss");

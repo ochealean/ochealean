@@ -1,6 +1,17 @@
-body{
-    background-color: cyan;
+body
+{
+	background-color:cyan;
 }
-h1{
-    background-color: red;
+div
+{
+	width:600px;
+	margin-top:300px;
+	margin-left:500px;
+	background-color:#e32636;
+	border:1px solid black;
+}
+marquee
+{
+	font-size: 100px;
+	color:white;
 }
