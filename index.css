@@ -1,60 +1,188 @@
-
-
-body
-{
-	user-select:none;
-	padding:0px;
+*{
 	margin:0px;
-	font-size:20px;
-	height:1500px;
+	padding:0px;
 }
-.intro
-{
-	width:0px;
-	height:0px;
+html, body{
+	user-select:none;
+	scroll-behavior:smooth;
 }
-.header	
-{
+.container{
+	height:auto;
+	width:auto;
+	display:flex;
+	flex-direction:column;
+	background-color:gray;
+}
+.box:nth-child(1){
+	background-color:orange;
+	height:100vh;
+}
+.box:nth-child(2){
+	background-color:yellow;
+	height:100vh;
+}
+.box:nth-child(3){
+	background-color:lime;
+	height:100vh;
+}
+.box:nth-child(4){
+	background-color:pink;
+	height:100vh;
+}
+.box:nth-child(5){
+	background-color:cyan;
+	height:100vh;
+}
+
+.header{
 	width:100%;
-	height:100px;
+	height:80px;
+	display:flex;
+	justify-content:center;
 	position:fixed;
 }
-.section-first
-{
-	width:100%;
-	height:100%;
-	background-color:yellow;
-}
-.section-second
-{
-	width:100%;
-	height:100%;
-	background-color:lime;
-}
-.header-selection-individual
-{
-	display:inline;
-	font-family:impact;
-	font-size:30px;
-	margin:15px;
-	cursor:pointer;
-}
-.header-selection
-{
-	float:right;
-}
+.headerContainerMain{
+		width:100%;
+		height:100px;
+		position:fixed;
+		display:flex;
+	}
 .test {
 	width:100%;
-	position:absolute;
 	position:fixed;
-    background-color: pink;
-    box-shadow: 0px 0px 15px -1px black;
-	animation: bannerEffect .5s ease;
+	background-color: gray;
+	display:flex;
+	justify-content:center;
+	box-shadow: 0px 0px 15px -1px black;
+	animation: bannerEffect .3s ease;
 	animation-fill-mode: forwards;
+	border-radius:0px 0px 10px 10px;
 }
 @keyframes bannerEffect {
-  0%   {color:black;height:60px;opacity:0;}
-  20%	{height:67px;opacity:1;}
-  90%	{height:79px;}
+  0%   {color:white;height:60px;opacity:0;}
+  20%	{height:67px;}
+  90%	{height:79px;opacity:1;}
   100% {color:white;height:80px;}
+}
+.headerContent1{
+	margin:0px;
+	padding:0px;
+	width:40%;
+	color:white;
+}
+
+h2{
+	margin:0px;
+	padding:0px;
+	height:80px;
+	list-style:none;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	font-size:1rem;
+}
+.headerContent2{
+	margin:0px;
+	padding:0px;
+	width:40%;
+	color:white;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	height:80px;
+	list-style:none;
+	display:flex;
+	justify-content:space-evenly;
+	align-items:center;
+	font-size:1rem;
+}
+.menu{
+	display:none;
+}
+
+.headerContent{
+	cursor:pointer;
+}
+.mobileOption{
+	display:none;
+}
+@media (max-width: 745px)
+{
+	ul{
+		display:none;
+	}
+	.menu{
+		display:block;
+		width:80px;
+		height:80px;
+		background:url("https://pic.onlinewebfonts.com/svg/img_219135.png");
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
+	.menuAnimIn{
+		display:block;
+		width:80px;
+		height:60px;
+		background:url("https://pic.onlinewebfonts.com/svg/img_219135.png");
+		background-size:cover;
+		background-repeat:no-repeat;
+		animation: bannerEffectPart .3s ease;
+		animation-fill-mode: forwards;
+	}
+	@keyframes bannerEffectPart {
+	  0%   {height:60px;}
+	  20%	{height:67px;}
+	  90%	{height:79px;}
+	  100% {height:80px;}
+	}
+	.headerContent2{
+		margin:0px;
+		padding:0px;
+		width:40%;
+		color:white;
+		display:flex;
+		justify-content:end;
+		align-items:start;
+	}
+	
+	.headerContainerMain{
+		width:100%;
+		height:600px;
+		position:fixed;
+		display:flex;
+		flex-direction:column;
+	}
+	.header{
+		width:100%;
+		height:80px;
+		display:flex;
+		justify-content:center;
+		
+	}
+	.mobileMenu{
+		width:100%;
+		height:100%;
+		display:none;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+	.mobileOption{
+		display:flex;
+		width:100%;
+		height:100%;
+		justify-content:space-evenly;
+		align-items:center;
+		flex-direction:column;
+		background-color:red;
+		color:white;
+		border-radius:15px;
+	}
+	.mobileOptionSpacer{
+		display:flex;
+		height:95px;
+		width:100%;
+	}
+	
 }
