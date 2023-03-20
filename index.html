@@ -9,24 +9,43 @@
     <title>lean's web</title>
 </head>
 <body>
-    <div class="intro">
-        
-    </div>
-    <div class="header" id="myP">
-        <header>
-            <ul class="header-selection">
-                <li href="*" class="header-selection-individual">Home</li>
-                <li href="*" class="header-selection-individual">About</li>
-                <li href="facebook.com" class="header-selection-individual">Skills</li>
-            </ul>
-        </header>
-    </div>
-    <div class="section-first">
-        
-    </div>
-    <div class="section-second">
-        
-    </div>
-    
+    <body>
+		<div class="container">
+			<div class="box">
+				<div class=headerContainerBanner">
+					<header class="headerContainerMain">
+						<div class="header" id="myP">
+							<div class="headerContent1">
+								<h2>lean</h2>
+							</div>
+							<div class="headerContent2">
+								<div class="menu" onclick="menuPop()" id="idmenu"></div>
+									<ul>
+										<li onclick="homeFunction()" id="home" class="headerContent">Home</li>
+										<li onclick="aboutFunction()" id="about" class="headerContent">About</li>
+										<li onclick="serviceFunction()" id="service" class="headerContent">Service</li>
+										<li onclick="educationFunction()" id="education" class="headerContent">Education</li>
+										<li onclick="contactFunction()" id="contact" class="headerContent">Contact</li>
+									</ul>
+							</div>
+						</div>
+						<div class="mobileMenu" id="mobileBackgroundSelector">
+							<div class="mobileOptionSpacer"></div>
+							<ul class="mobileOption" id="optionPop">
+								<li onclick="homeFunction()" id="mobile_home" class="headerContent">Home</li>
+								<li onclick="aboutFunction()" id="mobile_about" class="headerContent">About</li>
+								<li onclick="serviceFunction()" id="mobile_service" class="headerContent">Service</li>
+								<li onclick="educationFunction()" id="mobile_education" class="headerContent">Education</li>
+								<li onclick="contactFunction()" id="mobile_contact" class="headerContent">Contact</li>
+							</ul>
+						</div>
+					</header>
+				</div>
+			</div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
 </body>
 </html>
