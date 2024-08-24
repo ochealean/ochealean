@@ -39,7 +39,8 @@ window.onscroll = function() {myFunction()};
 			function contactFunction() {
 			  document.documentElement.scrollTop = 2800;
 			}
-			
+
+			window.load function() {headerAni()};
 			window.onscroll = function() {headerAni()};
 			
 			var pick_color = "cyan";
