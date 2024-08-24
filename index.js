@@ -39,8 +39,32 @@ window.onscroll = function() {myFunction()};
 			function contactFunction() {
 			  document.documentElement.scrollTop = 2800;
 			}
-
-			window.load function() {headerAni()};
+var apple = 2;
+var banana = 3;
+			window.load function() {document.getElementById("myP").className = "header";
+				document.getElementById("home").style.textDecoration = "underline";
+				document.getElementById("about").style.textDecoration = "none";
+				document.getElementById("service").style.textDecoration = "none";
+				document.getElementById("education").style.textDecoration = "none";
+				document.getElementById("contact").style.textDecoration = "none";
+				
+				document.getElementById("mobile_home").style.textDecoration = "underline";
+				document.getElementById("mobile_about").style.textDecoration = "none";
+				document.getElementById("mobile_service").style.textDecoration = "none";
+				document.getElementById("mobile_education").style.textDecoration = "none";
+				document.getElementById("mobile_contact").style.textDecoration = "none";
+				
+				document.getElementById("home").style.color = pick_color;
+				document.getElementById("mobile_home").style.color = pick_color;
+				document.getElementById("about").style.color = normal_color;
+				document.getElementById("mobile_about").style.color = normal_color;
+				document.getElementById("service").style.color = normal_color;
+				document.getElementById("mobile_service").style.color = normal_color;
+				document.getElementById("education").style.color = normal_color;
+				document.getElementById("mobile_education").style.color = normal_color;
+				document.getElementById("contact").style.color = normal_color;
+				document.getElementById("mobile_contact").style.color = normal_color;
+					       };
 			window.onscroll = function() {headerAni()};
 			
 			var pick_color = "cyan";
