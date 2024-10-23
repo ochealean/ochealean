@@ -11,7 +11,7 @@ html, body{
 	width:auto;
 	display:flex;
 	flex-direction:column;
-	background-color:gray;
+	background-color:rgb(159, 159, 159);
 }
 .box:nth-child(1){
 	background-color:rgb(245, 109, 255);
