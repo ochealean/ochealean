@@ -14,7 +14,7 @@ html, body{
 	background-color:gray;
 }
 .box:nth-child(1){
-	background-color:orange;
+	background-color:rgb(245, 109, 255);
 	height:100vh;
 }
 .box:nth-child(2){
