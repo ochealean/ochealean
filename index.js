@@ -1,5 +1,5 @@
 window.onscroll = function() {myFunction()};
-/*
+
 			function myFunction() {
 			  if (document.documentElement.scrollTop < 200) {
 				document.getElementById("myP").className = "header";
@@ -7,7 +7,7 @@ window.onscroll = function() {myFunction()};
 				document.getElementById("myP").className = "test";
 			  }
 			}
-		*/	
+			
 			let num = 0;
 				function menuPop(){
 					if(num == 0)
