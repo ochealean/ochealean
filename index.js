@@ -2,7 +2,7 @@ window.onscroll = function() {myFunction()};
 
 			function myFunction() {
 			  if (document.documentElement.scrollTop < 200) {
-				document.getElementById("myP").className = "header";
+				document.getElementById("myP").className = "endtest";
 			  } else {
 				document.getElementById("myP").className = "test";
 			  }

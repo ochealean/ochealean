@@ -64,6 +64,24 @@ html, body{
   90%	{height:79px;opacity:1;}
   100% {color:white;height:80px;}
 }
+
+.endtest {
+	width:100%;
+	height:80px;
+	display:flex;
+	justify-content:center;
+	position:fixed;
+	animation: bannerEffectend .3s ease;
+	animation-fill-mode: forwards;
+	border-radius:0px 0px 10px 10px;
+}
+@keyframes bannerEffectend {
+  0%   {color:white;height:80px;opacity:1;}
+  20%	{height:79px;}
+  90%	{height:67px;opacity:0;}
+  100% {color:white;height:60px;}
+}
+
 .headerContent1{
 	margin:0px;
 	padding:0px;
