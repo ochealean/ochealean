@@ -234,32 +234,31 @@ var banana = 3;
 			  }
 
         //inspect element prevent
-        document.addEventListener("contextmenu", function(e){
-          e.preventDefault();
-          });
-          document.onkeydown = function(e){
-          if(event.keyCode == 123)
-          {
-            return false;
-          }
-          if(e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0))
-          {
-            return false;
-          }
-          
-          if(e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0))
-          {
-            return false;
-          }
-          
-          if(e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0))
-          {
-            return false;
-          }
-          
-          if(e.ctrlKey && e.shiftKey && e.keyCode == "U".charCodeAt(0))
-          {
-            return false;
-          }
-          };
+        document.addEventListener("contextmenu", function(e) {
+			e.preventDefault();
+		});
+		
+		document.onkeydown = function(e) {
+			// Prevent F12 (Developer Tools)
+			if (e.code === "F12") {
+				return false;
+			}
+			// Prevent Ctrl+Shift+I (Developer Tools)
+			if (e.ctrlKey && e.shiftKey && e.key === "I") {
+				return false;
+			}
+			// Prevent Ctrl+Shift+C (Developer Tools)
+			if (e.ctrlKey && e.shiftKey && e.key === "C") {
+				return false;
+			}
+			// Prevent Ctrl+Shift+J (Developer Tools)
+			if (e.ctrlKey && e.shiftKey && e.key === "J") {
+				return false;
+			}
+			// Prevent Ctrl+U (View Source)
+			if (e.ctrlKey && e.key === "U") {
+				return false;
+			}
+		};
+		
 			  
