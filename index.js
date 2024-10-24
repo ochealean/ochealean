@@ -41,7 +41,7 @@ window.onscroll = function() {myFunction()};
 			}
 var apple = 2;
 var banana = 3;
-			window.load function() {document.getElementById("myP").className = "header";
+			window.load function(this) {document.getElementById("myP").className = "header";
 				document.getElementById("home").style.textDecoration = "underline";
 				document.getElementById("about").style.textDecoration = "none";
 				document.getElementById("service").style.textDecoration = "none";
