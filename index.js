@@ -2,7 +2,7 @@ window.onscroll = function() {myFunction()};
 
 			function myFunction() {
 			  if (document.documentElement.scrollTop < 200) {
-				document.getElementById("myP").className = "endtest";
+				document.getElementById("myP").className = "header";
 			  } else {
 				document.getElementById("myP").className = "test";
 			  }
@@ -74,7 +74,7 @@ var banana = 3;
 			  var home_uline = document.documentElement.scrollTop;
 			  if(home_uline <= 199)
 			  {
-			  document.getElementById("myP").className = "header";
+			  document.getElementById("myP").className = "endtest";
 				document.getElementById("home").style.textDecoration = "underline";
 				document.getElementById("about").style.textDecoration = "none";
 				document.getElementById("service").style.textDecoration = "none";
